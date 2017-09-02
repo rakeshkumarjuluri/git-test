@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -41,3 +42,6 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+=======
+node_modules
+>>>>>>> 073aa29296b538b5c6c60d937cb56cb3350150df
