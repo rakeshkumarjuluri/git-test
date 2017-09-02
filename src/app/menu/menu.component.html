@@ -1,7 +1,24 @@
 <div class="container"
      fxLayout="column"
      fxLayoutGap="10px">
+     <div>
+     	<div>
+     		<h3>Menu</h3>
+     	</div>
 
+     </div>
+<!-- this is the second one -->
+<div fxFlex>
+	<md-grid-list cols="2" rowHeight="200px">
+	   <md-grid-tile *ngFor = " let dish of dishes">
+	      <img height="200px" src={{dish.image}} alt={{dish.name}}>
+             <md-grid-tile-footer>
+                <h1 md-line>{{dish.name | uppercase}}</h1>
+             </md-grid-tile-footer>
+        </md-grid-tile>
+	</md-grid-list>
+</div>
+<!-- this is first one.this display small icons
 <md-list fxFlex>
   <md-list-item *ngFor="let dish of dishes">
     <img md-list-avatar src={{dish.image}} alt={{dish.name}}>
@@ -10,6 +27,24 @@
       <span> {{dish.description}} </span>
     </p>
   </md-list-item>
-</md-list>
+</md-list> -->
 
+<!-- angular card using in application -->
+	<div fxFlex *ngIf = " selectedDish ">
+		<md-card>
+			<md-card-header>
+				<md-card-title>
+					<h3> {{ selectedDish.name | uppercase }} </h3>
+				</md-card-title>
+			</md-card-header>
+			<img md-card-image src="{{ selectedDish.image }}" alt="{{ selectedDish.name }}">
+			<md-card-content>
+				<p>{{ selectedDish.description }}</p>
+			</md-card-content>
+			<md-card-actions>
+				<button md-button>LIKE</button>
+				<button md-button>SHARE</button>
+			</md-card-actions>
+		</md-card>
+	</div>
 </div>
