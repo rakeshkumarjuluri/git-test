@@ -4,11 +4,12 @@
      <div>
      	<div>
      		<h3>Menu</h3>
+     		<hr>
      	</div>
 
      </div>
 <!-- this is the second one -->
-<div fxFlex>
+<div layout="row">
 	<md-grid-list cols="2" rowHeight="200px">
 	   <md-grid-tile *ngFor = " let dish of dishes">
 	      <img height="200px" src={{dish.image}} alt={{dish.name}}>
@@ -30,7 +31,7 @@
 </md-list> -->
 
 <!-- angular card using in application -->
-	<div fxFlex *ngIf = " selectedDish ">
+	<!--  <div fxFlex *ngIf = " selectedDish ">
 		<md-card>
 			<md-card-header>
 				<md-card-title>
@@ -46,5 +47,6 @@
 				<button md-button>SHARE</button>
 			</md-card-actions>
 		</md-card>
-	</div>
+	</div>  -->
+
 </div>

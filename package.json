@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "con-fusion",
   "version": "0.0.0",
   "license": "MIT",
@@ -50,28 +49,5 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
-=======
-  "name": "git-test",
-  "version": "1.0.0",
-  "description": "this is a test directory to learn git and node",
-  "main": "index.html",
-  "scripts": {
-    "start":"npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite":"lite-server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rakeshkumarjuluri/git-test.git"
-  },
-  "author": "Rakesh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rakeshkumarjuluri/git-test/issues"
-  },
-  "homepage": "https://github.com/rakeshkumarjuluri/git-test#readme",
-  "devDependencies": {
-    "lite-server": "^2.3.0"
->>>>>>> 073aa29296b538b5c6c60d937cb56cb3350150df
   }
 }

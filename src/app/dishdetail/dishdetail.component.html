@@ -1,0 +1,55 @@
+<div class="container"
+     fxLayout="row" >
+
+     <div fxFlex="50" *ngIf = " selectedDish " style="padding: 20px">
+		<md-card >
+			<md-card-header>
+				<md-card-title>
+					<h3> {{ selectedDish.name | uppercase }} </h3>
+				</md-card-title>
+			</md-card-header>
+			<img md-card-image src="{{ selectedDish.image }}" alt="{{ selectedDish.name }}">
+			<md-card-content>
+				<p>{{ selectedDish.description }}</p>
+			</md-card-content>
+			<md-card-actions>
+				<button md-button>LIKE</button>
+				<button md-button>SHARE</button>
+			</md-card-actions>
+		</md-card>
+	</div>
+	<div fxFlex="50">
+		<h2>Comments</h2>
+            <p style="margin:10px">
+                
+                Imagine all the eatables, living in conFusion!<br>
+                5 Stars<br>
+                --John Lemon oct 17,2012<br>
+                
+            
+                
+                <br>Sends anyone to heaven, I wish I could get my mother-in-law to eat it!<br>
+                4 Stars<br>
+                --Paul McVites<br>
+                           
+                
+                <br>Eat it, just eat it<br>
+                3 Stars<br>
+                --Michael Jaikishan Feb 14,2015<br>
+                            
+               
+                <br>Ultimate, Reaching for the stars<br>
+                4 Stars<br>
+                --Ringo Starry Dec 3,2013<br>
+                
+            
+              
+                <br>It's your birthday, we're gonna party!<br>
+                2 Stars<br>	
+                --25 Cent Dec 3,2011<br>
+                
+            
+        </p>
+	</div>
+		
+			</div>
